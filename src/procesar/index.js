@@ -378,20 +378,20 @@ export default class mercancia {
           <div class="ac-a">
 
             <ul class="pl-3 pt-3">
-              <li><span class="font-weight-bold">Unidad de medida:</span> ${this.convertir.unidad_medida(objeto.unidad_medida)}</li>
-              <li><span class="font-weight-bold">Unidad de peso:</span> ${this.convertir.unidad_peso(objeto.unidad_peso)}</li>
-              <li><span class="font-weight-bold">Tipo de embalaje:</span> ${this.convertir.tipo_embalaje(objeto.tipo_embalaje)}</li>
-              <li><span class="font-weight-bold">Largo:</span> ${(objeto.tipo_embalaje != 1) ? objeto.largo_mercancia : "N/A" }</li>
-              <li><span class="font-weight-bold">Ancho o radio:</span> ${objeto.ancho_radio_mercancia}</li>
-              <li><span class="font-weight-bold">Alto:</span>  ${objeto.alto_mercancia}</li>
-              <li><span class="font-weight-bold">Peso:</span> ${objeto.peso_mercancia}</li>
-              <li><span class="font-weight-bold">Cantidad:</span> ${objeto.cantidad_mercancia}</li>
+              <li><span class="font-weight-bold">Unit of Measurement:</span> ${this.convertir.unidad_medida(objeto.unidad_medida)}</li>
+              <li><span class="font-weight-bold">Unit of Weight:</span> ${this.convertir.unidad_peso(objeto.unidad_peso)}</li>
+              <li><span class="font-weight-bold">Packaging Type:</span> ${this.convertir.tipo_embalaje(objeto.tipo_embalaje)}</li>
+              <li><span class="font-weight-bold">Length:</span> ${(objeto.tipo_embalaje != 1) ? objeto.largo_mercancia : "N/A" }</li>
+              <li><span class="font-weight-bold">Breadth or radius:</span> ${objeto.ancho_radio_mercancia}</li>
+              <li><span class="font-weight-bold">Height:</span>  ${objeto.alto_mercancia}</li>
+              <li><span class="font-weight-bold">Weight:</span> ${objeto.peso_mercancia}</li>
+              <li><span class="font-weight-bold">Quantity:</span> ${objeto.cantidad_mercancia}</li>
             </ul>
   
             <div class="float-right p-3">
-              <button type="button" class="btn btn-outline-info btn" onclick = "procesar.copiar('${objeto.id}')" >Copiar</button>
-              <button type="button" class="btn btn-outline-primary btn" onclick ="procesar.editar('${objeto.id}')" >Editar</button>
-              <button type="button" class="btn btn-outline-secondary btn" onclick = "procesar.preEliminar('${objeto.id}')">Eliminar</button>
+              <button type="button" class="btn btn-outline-info btn" onclick = "procesar.copiar('${objeto.id}')" >Copy</button>
+              <button type="button" class="btn btn-outline-primary btn" onclick ="procesar.editar('${objeto.id}')" >Edit</button>
+              <button type="button" class="btn btn-outline-secondary btn" onclick = "procesar.preEliminar('${objeto.id}')">Delete</button>
             </div>
           </div>
         </div>  

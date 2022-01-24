@@ -1,7 +1,7 @@
 const express   = require('express')
 const app       = express()
-const port      = process.env.PORT || 3121
+const port      = process.env.PORT || 3100
 
 app.use(express.static('public'))
 
-app.listen(port, () => console.log(`3Dbin app listening on http://127.0.0.1:${port}!`))
+app.listen(port, () => console.log(`3Dbin app listening on http://127.0.0.1:${port}`))
